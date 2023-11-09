@@ -1,7 +1,4 @@
-class Vehicle:
-    def __init__(self):
-        pass
-
+from vehicle import Vehicle
 
 class Car(Vehicle):
     def __init__(self):
@@ -10,17 +7,17 @@ class Car(Vehicle):
 
 class Plane(Vehicle):
     def __init__(self):
-        pass
+        super().__init__()
 
 
 class Boat(Vehicle):
     def __init__(self):
-        pass
+        super().__init__()
 
 
 class RaceCar(Car):
     def __init__(self):
-        pass
+        super().__init__()
 
 
 # Testing
@@ -33,3 +30,4 @@ p = Plane()
 b = Boat()
 
 rc = RaceCar()
+
