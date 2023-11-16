@@ -7,7 +7,7 @@ put_response = requests.put("https://jsonplaceholder.typicode.com/posts/1")
 delete_response = requests.delete("https://jsonplaceholder.typicode.com/posts/1")
 
 filteredByTitle = []
-filterdByBody = []
+filteredByBody = []
 
 # filter out GET calls results
 for data in get_response.json():
@@ -18,4 +18,4 @@ for data in get_response.json():
     # filter out body that contains more than 3 lines of description
     # splitlines() seperates a string into list of lines based on linebreaks
     if len(data['body'].splitlines()) > 3:
-        filterdByBody.append(data)
+        filteredByBody.append(data)
